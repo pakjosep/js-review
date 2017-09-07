@@ -8,45 +8,83 @@ Now, unleash your coding beast!
 
 /*1.  Variables with a String as their value.
 Declare variables named yourName, neighborName, teacherName.  Console log each variable.*/
+var yourName= 'Joe';
+console.log(yourName);
+var neighborName= 'Ai';
+console.log(neighborName);
+var teacherName= 'Vic';
+console.log(teacherName);
+
 
 /*2. Variable with a Number as their value.
 Declare variables named numberOfFloorsBurjKhalifa, TokyoOlympicsYear. Please assign the actual data for each variable.
 Console log each variable.*/
 
+var numberOfFloorsBurjKhalifa= 489;
+console.log(numberOfFloorsBurjKhalifa);
+var TokyoOlympicsYear= 2020;
+console.log(TokyoOlympicsYear);
+
 /*3. Variables with Boolean values
 Declare variables named lovesPrepClass, eatsDonuts, drinksGin.  Console log each variable.*/
+var lovesPrepClass='false';
+console.log(lovesPrepClass);
+var eatsDonuts= "true";
+console.log(eatsDonuts);
+var drinksGin= 'false';
+console.log(drinksGin);
+
 
 /*4. Variable with Null values
 Declare variables named completedCodingChallenge, traveledToSpace.  Console log each variable*/
+var completedCodingChallenge= null;
+console.log(completedCodingChallenge);
+var traveledToSpace=null;
+console.log(traveledToSpace);
 
 /*5.  Variables with Array for its value.
 Declare a variable named japanPrefectures and assign the value of any 5 prefectures in Japan.
 Console log the variable 
 Console log the value at index 1.
 Console log the value at index 3.*/
+var japanPrefectures= ['tokyo','osaka', 'mie', 'kyoto','fukuoka'];
+console.log(japanPrefectures);
+console.log(japanPrefectures[1]);
+console.log(japanPrefectures[3]);
+
 
 /*6.  Variable with Array for its value.
 Declare a variable named planets and assign the value of each planet in our solar system, in the order of distance from the sun.  
 Console log the variable
 Console log "Earth" using the index position
 Console log "Uranus" using the index position*/
-
+var planets= ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Neptune', 'Uranus', 'Pluto'];
+console.log(planets);
+console.log(planets[2]);
+console.log(planets[7]);
 /*7. Variables with Array for its value.
 Declare a variable named india and assign the value of 3 popular tourist attractions.  
 Console log the variable.*/
+var india=['Ganges', 'Taj Mahal', 'New Delhi'];
+console.log(india);
 
 /*8. Adding new elements to an array.
 Add another popular tourist attraction to the india variable from position 1 of the index.
 (hint, it is not the push() method). Console log the variable.*/
-
+india.splice(1,0,'bombay');
+console.log(india);
 /*9. Removing the last element from an array.
 Using the same india variable, remove the last element from the array. Console log the variable. */
+india.splice(3,1);
+console.log(india);
 
 /*10. Removing an element from an array into a new array. 
 Removethe first two elements in the snacks array and return a new array.
 Console log the new variable. */
 
 var snacks = ["peanut butter cup oreo", "birthday cake oreo", "banana split oreo", "watermelon oreo", "cookie dough oreo", "creamsicle oreo"];
+var newArray= snacks.slice(0,2);
+console.log(newArray);
 
 /*11. Declare two variables with names of your choosing and use the triple comparison operator (===) to compare:
 a) two strings "Racecar" and "racecar"
