@@ -91,6 +91,12 @@ a) two strings "Racecar" and "racecar"
 b) a string and a number "three" and 3
 
 console log each variable*/
+var first= 'Racecar'==='racecar';
+console.log(first);
+
+
+var one='three'===3;
+console.log(one);
 
 /*12.  Declare a literal object named "hotel" with properties and values set to:
 
@@ -100,6 +106,13 @@ console log each variable*/
     checkIn => null
 
  console log the object*/
+ var hotel= {
+  name: "Hilton",
+  rooms: 200,
+  pool: true,
+  checkIn: null
+ };
+ console.log(hotel);
 
 /*13.  Declare a literal object named "car" with properties and values set to:
 
@@ -109,7 +122,13 @@ console log each variable*/
     doors => 4
 
  console log the object*/
-
+var car= {
+  name: "BMW",
+  model: "X5",
+  year: 2017,
+  doors: 4
+};
+console.log(car);
 /*14.  Declare a literal object named bigBox and set its value to be an empty object.
 
 Add a property named size and set it to a random number value between 0 and 50 (hint, use Math.something...)
