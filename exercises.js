@@ -136,7 +136,12 @@ Add a property named color and set it to any color.
 Add a property named contents and set it to be an empty array
 
 console log the object*/
+var bigBox= {};
 
+bigBox.size= Math.floor(Math.random()*51);
+bigBox.color= 'blue';
+bigBox.contents= [];
+console.log(bigBox);
 /*15.  Declare a literal object named "colorMeBadd" with properties and values set to:
 
    iro        => [literal object]
@@ -151,11 +156,34 @@ console log the object*/
    isJapanese => true              
 
 console log the object */ 
+var colorMeBadd= {
+  iro: 'color',
+  akai: 'red',
+  aoi : 'blue',
+  midori: 'green',
+  shiroi: 'white',
+  pinku: 'pink',
+  murasaki: 'purple'
+};
+console.log(colorMeBadd);
 
 /*16. As the general manager for the DevLeague Prep Beer Pong Team, your job is to select the starting players from the roster array. Create two variables, Ateam and Bteam and assign each an empty array. You will then assigned players that have an even number index position to the Ateam and odd number index position to the Bteam. Let the games begin! Console log the results.*/
 
 var roster = ["Alex", "Laura", "Sami", "Jasmine", "Adam", "Dakota", "Jonathon", "Luther", "Kevin", "Vic"];
 
+var aTeam= [];
+var bTeam= [];
+  
+for (var i=0; i<roster.length; i++){
+  if (i % 2===0) {
+    aTeam.push(roster[i]); 
+  }else{
+    bTeam.push(roster[i]);
+  }
+}
+
+console.log(aTeam);
+console.log(bTeam);
 /*17. Using the japanPrefectures array you created in exercise 5, create a for loop that iterates through this array and console logs the following message:
 
 "The location at i is:  ."  and append the value of i and the value stored within the Array at that index to this string.
